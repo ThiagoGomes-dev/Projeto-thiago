@@ -1,0 +1,158 @@
+.container {
+  width: 450px;
+  max-width: 90vw;
+  border-radius: 30px;
+  border: 2px solid rgba(42, 58, 92, 0.71);
+  background: linear-gradient(123.64deg, rgba(255, 255, 255, 0) -22.71%, rgba(255, 255, 255, 0.039) 70.04%);
+  margin: 0 auto; // Centraliza o container na página
+
+  .signup-prompt {
+    text-align: center; // Centraliza o texto
+    color: gray; // Cor do texto
+    font-family: 'Plus Jakarta Sans', sans-serif; // Fonte do texto
+
+    .signup-link {
+      font-weight: bold; // Torna o texto em negrito
+      color: white; // Cor do link
+      text-decoration: none; // Remove o sublinhado
+
+      &:hover {
+        text-decoration: underline; // Adiciona sublinhado ao passar o mouse
+      }
+    }
+  }
+
+  .gradient-text {
+    font-size: 36px; // Ajuste o tamanho da fonte conforme necessário
+    font-weight: bold; // Estilo em negrito
+    background: linear-gradient(90deg, #FFFFFF, #808080); // Gradiente de cores
+    -webkit-background-clip: text; // Clip para o fundo (Safari)
+    -webkit-text-fill-color: transparent; // Torna o preenchimento do texto transparente
+    margin: 20px 0; // Margem acima e abaixo
+    text-align: center; // Centraliza o texto
+  }
+
+  p {
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-align: center;
+  }
+
+  .options {
+    display: flex;
+    justify-content: space-around;
+
+    .social-icon-container {
+      display: flex;
+      justify-content: center; // Center the icon inside the container
+      align-items: center; // Center vertically
+      width: 70px; // Set width as needed
+      height: 70px; // Set height as needed
+      border: 2px solid rgba(42, 58, 92, 0.71); // Border color and width
+      border-radius: 20px; // 30px radius for rounded corners
+      margin: 0 10px; // Adjust spacing between icons
+      background-color: transparent; // Background color (optional)
+    }
+  }
+
+  .input-container {
+    margin: 20px 15px; // Margem fixa à esquerda e à direita
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: white;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      box-sizing: border-box;
+    }
+  }
+
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  margin-left: 15px; // Mesma margem à esquerda que os outros componentes
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 18.5px;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 30px;
+    transition: .4s;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 1px;
+      bottom: 0.5px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+  }
+
+  input:checked + .slider {
+    background-color: #0075FF;
+  }
+
+  input:checked + .slider::before {
+    transform: translateX(17px);
+  }
+}
+
+.switch-label {
+  margin-left: 10px;
+  color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.button-container {
+  margin: 20px 15px;
+
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: #0075FF;
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #005bb5;
+    }
+  }
+
+}
+
+

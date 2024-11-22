@@ -1,0 +1,45 @@
+<div class="container">
+  <p class="title">Logar</p>
+
+  <div class="options">
+    <div class="social-icon-container">
+      <social-media [socialLogo]="'facebook'"></social-media>
+    </div>
+    <div class="social-icon-container">
+      <social-media [socialLogo]="'apple'"></social-media>
+    </div>
+    <div class="social-icon-container">
+      <social-media [socialLogo]="'google'"></social-media>
+    </div>
+  </div>
+
+  <p class="subtitle">Ou</p>
+
+  <div class="input-container">
+    <label for="input1">Email</label>
+    <input type="text" id="input1" placeholder="Seu endereço de email" [(ngModel)]="email"/>
+  </div>
+
+  <div class="input-container">
+    <label for="input2">Senha</label>
+    <input type="text" id="input2" placeholder="Sua senha" [(ngModel)]="senha"/>
+  </div>
+
+  <div class="switch-container">
+    <label class="switch">
+      <input type="checkbox" id="toggleSwitch" />
+      <span class="slider"></span>
+    </label>
+    <label for="toggleSwitch" class="switch-label">Lembrar de mim</label>
+  </div>
+
+  <div class="button-container">
+    <button>Entrar</button>
+  </div>
+
+  <p class="signup-prompt">
+    Não tem uma conta? <a [routerLink]="['/register']" href="#" class="signup-link">Inscreva-se</a>.
+  </p>
+
+  <h1 class="gradient-text">ANALYTIC CONTÁBIL</h1>
+</div>

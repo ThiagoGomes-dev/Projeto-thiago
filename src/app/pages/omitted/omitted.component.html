@@ -1,0 +1,39 @@
+<h2 class="table-title">Histórico de Análises</h2>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Razão Social</th>
+    <th>Arquivo XML</th>
+    <th>Arquivo SPED</th>
+    <th>Data da Análise</th>
+    <th>Download</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of tableData">
+    <td>
+      <div>{{ item.razaoSocial }}</div>
+      <div class="secondary">{{ item.cnpj }}</div>
+    </td>
+    <td>
+      <div class="flex-container">
+        <app-icons [icon]="'upload'"></app-icons>
+        <div class="secondary">{{ item.arquivoXml }}</div>
+      </div>
+    </td>
+    <td>
+      <div class="flex-container">
+        <app-icons [icon]="'upload'"></app-icons>
+        <div class="secondary">{{ item.arquivoSped }}</div>
+      </div>
+    </td>
+    <td>{{ item.dataAnalise }}</td>
+    <td>
+      <div class="flex-container">
+        <app-icons [icon]="'upload'"></app-icons>
+        {{ item.download }}
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>

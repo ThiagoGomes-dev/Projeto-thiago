@@ -1,0 +1,28 @@
+<div class="card-container">
+  <div class="card-column">
+    <div>Analytica Contábil</div>
+    <div>11.222.333/0001-44</div>
+  </div>
+
+  <div class="upload-container">
+    <div class="card-column">
+      <input type="file" #fileInput accept=".txt" (change)="onFileSelected($event, 'TXT')" hidden />
+      <button mat-icon-button (click)="fileInput.click()" class="upload-button">
+        <!-- <app-icons [icon]="'upload'"></app-icons> -->
+        <mat-icon>upload</mat-icon>
+      </button>
+      <span>Importar TXT</span>
+    </div>
+  
+    <div class="card-column">
+      <input type="file" #fileInputSped accept=".txt" (change)="onFileSelected($event, 'SPED')" hidden />
+      <button mat-icon-button (click)="fileInputSped.click()" class="upload-button">
+        <!-- <app-icons [icon]="'upload'"></app-icons> -->
+        <mat-icon>upload</mat-icon>
+      </button>
+      <span>Importar SPED</span>
+    </div>
+    
+    <button [disabled]="!fileContentTxt || !fileContentSped" class="analyze-button" (click)="onUpload()">Analisar</button>
+    </div>
+</div>

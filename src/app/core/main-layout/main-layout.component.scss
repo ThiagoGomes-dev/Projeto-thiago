@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  position: relative;
+
+  .side-nav {
+    width: 15vw;
+    height: 100%;
+    background: linear-gradient(159.02deg, #0F123B 14.25%, #090D2E 56.45%, #020515 86.14%);
+    border-right: 2px solid rgba(42, 58, 92, 0.71);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+    .gradient-text {
+      font-size: 26px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #FFFFFF, #808080);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 20px 0;
+      text-align: center;
+      padding: 1rem;
+      border-bottom: 1px solid gray;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin: 20px 0;
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: white;
+          text-decoration: none;
+          font-family: 'Plus Jakarta Sans', sans-serif;
+          font-size: 18px;
+          font-weight: bold;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #ccc;
+          }
+        }
+      }
+    }
+
+    .nav-category-title {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 30px 0 10px;
+      text-transform: uppercase;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding-bottom: 5px;
+    }
+  }
+
+  .content {
+
+  }
+}
+

@@ -1,0 +1,48 @@
+.card-container {
+  width: 75vw;
+  display: flex;
+  padding: 10px;
+  margin: 2.5vw;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+
+  .upload-container {
+    display: flex;
+    width: 50vw;
+  }
+
+  .card-column {
+    flex: 1;
+    padding: 0 10px;
+    text-align: left;
+  }
+
+  .upload-button {
+    border: solid 2px black;
+    border-radius: 10px;
+    margin: 2px 4px 0 0;
+    cursor: pointer;
+  }
+
+  .analyze-button {
+    background: linear-gradient(126.97deg, #01B574 28.26%, #15DB93 91.2%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #218838;
+    }
+
+    &:disabled {
+      background: #84be90;
+      cursor: not-allowed;
+    }
+  }
+}
